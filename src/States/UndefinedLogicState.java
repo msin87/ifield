@@ -1,9 +1,9 @@
 package States;
 
 import Enums.ELevel;
-import Interfaces.State;
+import Interfaces.LogicState;
 
-public class UndefinedState implements State {
+public class UndefinedLogicState implements LogicState {
     @Override
     public ELevel getState() {
         return ELevel.NULL;

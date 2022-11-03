@@ -1,26 +1,22 @@
 package States;
 
 import Enums.ELevel;
-import Interfaces.State;
+import Interfaces.LogicState;
 
-public class FalseState implements State {
-    private int power;
+public class NullLogicState implements LogicState {
+    private int power = 0;
     @Override
     public ELevel getState() {
-        return ELevel.FALSE;
+        return ELevel.NULL;
     }
 
     @Override
     public int getPower() {
-        return power;
+        return 0;
     }
 
     @Override
     public void setPower(int power) {
-        this.power = power;
-    }
-
-    public FalseState(int power) {
         this.power = power;
     }
 }
